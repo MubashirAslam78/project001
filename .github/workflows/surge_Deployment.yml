@@ -36,7 +36,7 @@ jobs:
       run: npm install --global surge
       
     - name: Deploy to Surge
-      run: surge \Users\MuBaShiR MaliCk\Desktop\PIAIC IOT\BootCamp\React Apps\project001 reweb.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./ reweb.surge.sh --token ${{secrets.SURGE_TOKEN}}
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
