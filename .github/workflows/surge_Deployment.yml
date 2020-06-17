@@ -24,9 +24,11 @@ jobs:
       uses : actions/setup-node@v2-beta
       with :
         node-version: 12
-    - uses: comchangs/action-yarn@master
-      with:
-        cmd: yarn install # will run "yarn install" command
+    
+    - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install # will run `yarn install` command
+    
     - name: Build React App
       run: yarn build
       
