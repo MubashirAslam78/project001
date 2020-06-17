@@ -36,7 +36,7 @@ jobs:
       run: npm install --global surge
       
     - name: Deploy to Surge
-      run: surge ./ actweb.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build actweb.surge.sh --token ${{secrets.SURGE_TOKEN}}
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
